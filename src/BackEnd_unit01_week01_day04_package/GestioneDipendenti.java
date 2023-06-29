@@ -71,7 +71,7 @@ public class GestioneDipendenti {
 
 		System.out.println("");
 		System.out.println("");
-		System.out.println("Report stipendi mensili:");
+		System.out.println("Report stipendi mensili");
 
 		operaio1.calcolaPaga(operaio1, 5);
 		operaio2.calcolaPaga(operaio2, 5);
@@ -88,7 +88,7 @@ public class GestioneDipendenti {
 
 		double totale = operaio1.calcolaPaga(operaio1, 5) + operaio2.calcolaPaga(operaio2, 5)
 				+ impiegato1.calcolaPaga(impiegato1, 5) + dirigente1.calcolaPaga(dirigente1, 5);
-		System.out.println("Totale: " + totale + " €");
+		System.out.println("Totale stipendi mensili: " + totale + " €");
 	}
 
 }
