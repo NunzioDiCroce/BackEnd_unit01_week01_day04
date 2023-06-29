@@ -107,10 +107,11 @@ public class Dipendente {
 		return stipendioMensile;
 	}
 
-	public static double calcolaPaga(Dipendente _dipendente, int _oreStraordinario) {
-		double ordinario = _dipendente.getStipendio();
-		double straordinario = _dipendente.getImportoOrarioStraordinario() * _oreStraordinario;
-		double stipendioMensile = ordinario + straordinario;
-		return stipendioMensile;
-	}
+	/*
+	 * public static double calcolaPaga(Dipendente _dipendente, int
+	 * _oreStraordinario) { double ordinario = _dipendente.getStipendio(); double
+	 * straordinario = _dipendente.getImportoOrarioStraordinario() *
+	 * _oreStraordinario; double stipendioMensile = ordinario + straordinario;
+	 * return stipendioMensile; }
+	 */
 }
