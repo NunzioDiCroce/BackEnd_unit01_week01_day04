@@ -3,7 +3,7 @@ package BackEnd_unit01_week01_day04_package;
 public class Dipendente {
 
 	// - - - - - - - - - - - - - - - - - - - - attributi statici
-	private static double stipendioBase = 1000;
+	public static double stipendioBase = 1000;
 
 	// - - - - - - - - - - - - - - - - - - - - attributi NON statici
 	private String matricola;
@@ -84,17 +84,17 @@ public class Dipendente {
 		if (this.LivelloTipo == LivelloTipo.OPERAIO) {
 			this.LivelloTipo = LivelloTipo.IMPIEGATO;
 			System.out.println("Il dipendente " + this.matricola + " è stato promosso da Operaio a Impiegato");
-			this.stipendio = this.stipendioBase * 1.2;
+			this.stipendio = stipendioBase * 1.2;
 
 		} else if (this.LivelloTipo == LivelloTipo.IMPIEGATO) {
 			this.LivelloTipo = LivelloTipo.QUADRO;
 			System.out.println("Il dipendente " + this.matricola + " è stato promosso da Impiegato a Quadro");
-			this.stipendio = this.stipendioBase * 1.5;
+			this.stipendio = stipendioBase * 1.5;
 
 		} else if (this.LivelloTipo == LivelloTipo.QUADRO) {
 			this.LivelloTipo = LivelloTipo.DIRIGENTE;
 			System.out.println("Il dipendente " + this.matricola + " è stato promosso da Quadro a Dirigente");
-			this.stipendio = this.stipendioBase * 2;
+			this.stipendio = stipendioBase * 2;
 
 		} else if (this.LivelloTipo == LivelloTipo.DIRIGENTE) {
 			System.out.println("Errore, il dipendente " + this.matricola + " è un Dirigente.");

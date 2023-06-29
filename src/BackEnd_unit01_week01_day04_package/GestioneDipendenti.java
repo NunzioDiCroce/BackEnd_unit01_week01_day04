@@ -71,7 +71,24 @@ public class GestioneDipendenti {
 
 		System.out.println("");
 		System.out.println("");
-		System.out.println("Totale stipendi mensili:");
+		System.out.println("Report stipendi mensili:");
+
+		operaio1.calcolaPaga(operaio1, 5);
+		operaio2.calcolaPaga(operaio2, 5);
+		impiegato1.calcolaPaga(impiegato1, 5);
+		dirigente1.calcolaPaga(dirigente1, 5);
+		System.out.println(
+				"Dipendente " + operaio1.getMatricola() + " Stipendio " + operaio1.calcolaPaga(operaio1, 5) + " €");
+		System.out.println(
+				"Dipendente " + operaio2.getMatricola() + " Stipendio " + operaio2.calcolaPaga(operaio2, 5) + " €");
+		System.out.println("Dipendente " + impiegato1.getMatricola() + " Stipendio "
+				+ impiegato1.calcolaPaga(impiegato1, 5) + " €");
+		System.out.println("Dipendente " + dirigente1.getMatricola() + " Stipendio "
+				+ dirigente1.calcolaPaga(dirigente1, 5) + " €");
+
+		double totale = operaio1.calcolaPaga(operaio1, 5) + operaio2.calcolaPaga(operaio2, 5)
+				+ impiegato1.calcolaPaga(impiegato1, 5) + dirigente1.calcolaPaga(dirigente1, 5);
+		System.out.println("Totale: " + totale + " €");
 	}
 
 }
